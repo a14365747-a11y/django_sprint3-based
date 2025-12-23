@@ -10,6 +10,7 @@ class BaseModel(models.Model):
     Абстрактная модель.
     Добавляет метку создания по времени и флаг is_published.
     """
+    
     is_published = models.BooleanField(
         default=True,
         verbose_name='Опубликовано',
